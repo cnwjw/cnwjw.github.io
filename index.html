@@ -1,1 +1,100 @@
-<h1>This is my firstpage commit github from myself<\h1>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为蕊儿</title>
+    <style>
+        /* 设置页面的背景和字体 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff007f, #ff9a00);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* 页面容器 */
+        .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 4rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* 爱心图标样式 */
+        .heart {
+            font-size: 50px;
+            animation: heartAnimation 1.5s infinite ease-in-out;
+            margin-top: 20px;
+        }
+
+        /* 定义渐变动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* 爱心动画效果 */
+        @keyframes heartAnimation {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        /* 爱情短语 */
+        p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* 给爱心加入一个小心跳效果 */
+        .heart:before {
+            content: "❤️";
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        /* 爱心的跳动效果 */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>亲爱的蕊儿，</h1>
+        <p>感冒好些了没有❤️</p>
+        <div class="heart"></div>
+    </div>
+</body>
+</html>
